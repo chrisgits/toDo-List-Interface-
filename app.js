@@ -1,16 +1,18 @@
-//Problem: User interaction doesn't provide desired results.
-//Solution: Add interactivty so the user can manage daily tasks.
-
+// === Chris Mannel - Interface - ToDo list project ===
+// === Variables ===
 var taskInput = document.getElementById("addItem"); //new-task
 var addButton = document.getElementsByTagName("button")[0]; //first button
-var incompleteTasksHolder = document.getElementById("incomplete-tasks"); //incomplete-tasks
-var completedTasksHolder= document.getElementById("completed-tasks"); //completed-tasks
+var incompleteTasksHolder = document.getElementById("incompleteTasks"); //incomplete-tasks
+var completedTasksHolder= document.getElementById("completedTasks"); //completed-tasks
 
+// === Functions ===
 //Add a new task
 var addItem = function() {
   console.log("Add item...");
   //When the button is pressed
+
   //Create a new list item with the text from #new-task:
+
   //input (checkbox)
     //label
     //input (text)
@@ -54,5 +56,6 @@ var taskIncomplete = function() {
     //Append the task list item to the #incomplete-tasks
 }
 
+// === Wiring ===
 //Set the click handler to the addTask function
-addButton.onclick = addTask;
+addButton.onclick = addItem;
