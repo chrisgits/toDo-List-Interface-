@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="custom.css" rel="stylesheet" type="text/css" />
+  <meta name="description" content="ToDo list project">
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+
+<body>
+ <div class="container">
+  <h1>To Do List</h1>
+
+  <hr>
+
+   <h2>Add Item</h2>
+   <hr>
+
+   <div class="divAdd">
+   <form id="form" class="form-inline">
+  <div class="form-group">
+    <input id="addItem" type="text" class="form-control" placeholder="Add Task Here">
+  </div>
+  <button type="submit" onsubmit="addItem" class="btn btn-sm btn-success">Add</button>
+   </form> <!-- END Add Item -->
+   </div>
+
+   <hr>
+
+   <div class="divItems">
+   <h2>To Do Items</h2>
+
+   <ul id="incompleteTasks">
+
+     <li><input type="checkbox"><label></label>
+       <button class="edit btn btn-sm btn-primary">Edit</button>
+       <button class="delete btn btn-sm btn-danger">Delete</button></li>
+     <li><input type="checkbox"><label></label>
+       <button class="edit btn btn-sm btn-primary">Edit</button>
+       <button class="delete btn btn-sm btn-danger">Delete</button></li>
+   </ul>
+   </div> <!--End Items DIV-->
+
+   <hr>
+
+   <div class="divCompleted">
+   <h2>Completed</h2>
+
+   <ul id="completedTasks">
+     <li><input type="checkbox" checked><label></label>
+       <button class="edit btn btn-sm btn-primary">Edit</button>
+       <button class="delete btn btn-sm btn-danger">Delete</button></li>
+     <li><input type="checkbox" checked><label></label>
+       <button class="edit btn btn-sm btn-primary">Edit</button>
+       <button class="delete btn btn-sm btn-danger">Delete</button></li>
+   </ul>
+   </div><!--End Completed DIV-->
+
+ </div> <!--End Container DIV-->
+
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
