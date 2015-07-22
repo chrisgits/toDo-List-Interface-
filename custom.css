@@ -4,7 +4,6 @@ body {
 
 }
 
-
 h1 {
   color: red;
   text-align: center;
@@ -22,8 +21,7 @@ ul {
 }
 
 .divItems label {
-  display: inline-block;
-  width:
+  /*display: inline-block;*/
 }
 
 li {
@@ -37,9 +35,14 @@ li {
   width: 50%;
 }
 
+.inputStyle {
+  line-height: 40px;
+}
+
 .divItems button {
   position: relative;
-  left: 100%;
+  left: 47%;
+  margin-right: 5px;
 }
 /* ==== To Do END ==== */
 

@@ -26,11 +26,11 @@ var createNewTaskElement = function (taskString) {
 
   checkBox.type = "checkbox"; //adds checkbox type to element
   editInput.type = "text";
-  editInput.className = "form-control"; //adds class for Bootstrap styling
+  editInput.className = "inputStyle"; //adds class for Bootstrap styling
   editButton.innerText = "Edit";
-  editButton.className = "edit btn btn-primary";
+  editButton.className = "edit btn btn-sm btn-primary";
   deleteButton.innerText = "Delete";
-  deleteButton.className = "delete btn btn-danger";
+  deleteButton.className = "delete btn btn-sm btn-danger";
   //assigns innerText to 'taskString' value passed to this function
   label.innerText = taskString;
 
